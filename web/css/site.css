@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext');
+
 html,
 body {
     height: 100%;
+    font-family: 'Open Sans','Roboto',sans-serif;
 }
 
 .wrap {
@@ -112,4 +115,26 @@ a.desc:after {
 
 .nav > li > form > button.logout:focus {
     outline: none;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.block {
+    background: #eee ;
+    border: 1px solid #ccc;
+}
+
+.blog {
+    color: green;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.menu-container {
+    background: red;
 }

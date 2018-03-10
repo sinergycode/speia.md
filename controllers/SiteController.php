@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\News;
 
 class SiteController extends Controller
 {
@@ -61,7 +62,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $news = News::find()->limit(4)->orderBy(['created_at' => SORT_DESC])->all();
+//        $news =
+        return $this->render('index', compact('news'));
     }
 
     /**
